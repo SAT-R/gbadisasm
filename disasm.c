@@ -1283,6 +1283,7 @@ static void print_disassembly(void)
         if (i >= gLabelsCount)
             break;
         nextAddr = gLabels[i].addr;
+        // fprintf(stderr, "%d, %d\n", addr, nextAddr);
         assert(addr <= nextAddr);
 
         if (nextAddr <= ROM_LOAD_ADDR + gInputFileBufferSize) // prevent out-of-bound read

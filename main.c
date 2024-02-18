@@ -288,7 +288,7 @@ int main(int argc, char **argv)
     int i;
     const char *romFileName = NULL;
     const char *configFileName = NULL;
-    ROM_LOAD_ADDR = 0x08000000;
+    ROM_LOAD_ADDR = 0x8000000;
 
 #ifdef _WIN32
     // Work around MinGW bug that prevents us from seeing the assert message
